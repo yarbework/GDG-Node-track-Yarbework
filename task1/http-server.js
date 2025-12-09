@@ -19,7 +19,7 @@ if(req.method === 'POST'){
             body += chunk.toString();
         });
         req.on('end', () => {
-            res.end(`Data received: ${body}`);
+            res.end(`Data: ${body}`);
         });
     }
     else{
@@ -29,5 +29,5 @@ if(req.method === 'POST'){
 })
 
 server.listen(3000, ()=> {
-    console.log('Server is running')
+    console.log('Server is running on port 3000')
 })
