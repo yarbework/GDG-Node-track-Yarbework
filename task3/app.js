@@ -7,6 +7,7 @@ const app = express()
 app.use(express.json()) 
 
 app.use('/books', booksRoutes)
+
 app.use(errorHandler)
 
 export default app
